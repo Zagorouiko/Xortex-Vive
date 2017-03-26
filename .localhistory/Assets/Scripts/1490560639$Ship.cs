@@ -11,7 +11,7 @@ public class Ship : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward))
         {
-            laser.Emit(1);
+            SteamVR_LaserPointer.Emit(1);
         }
         if (controller != null)
         {

@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    public ParticleSystem laser;
+
     private SteamVR_TrackedObject controller;
 
     void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward))
-        {
-            laser.Emit(1);
-        }
         if (controller != null)
         {
             transform.position = controller.transform.position;

@@ -11,7 +11,7 @@ public class Asteroid : MonoBehaviour {
         r.angularVelocity = Random.onUnitSphere*Random.Range(.5f, .9f);
     }
 	// Use this for initialization
-    void OnParticleCollision()
+    void OnTriggerEnter()
     {
         Destroy(gameObject);
     }
